@@ -1,7 +1,7 @@
 /**
  * Эту функцию трогать не нужно
  */
-function print(text) {
+ function print(text) {
   console.log(text);
 }
 
@@ -10,7 +10,21 @@ function print(text) {
  * чтобы функция sayHello работала корректно
  */
 function isValid(name) {
-  // ваш код...
+  
+  if (!name) {
+    return false;
+  }
+
+  if (name.length < 4) {
+    return false;
+  } else {
+    for (let i = 0; i < name.length; i++) {
+      if (name[i] === ' ') {
+        return false;
+      }
+    }
+    return true;
+  }
 }
 
 function sayHello() {
