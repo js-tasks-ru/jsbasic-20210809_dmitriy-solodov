@@ -5,7 +5,7 @@ function camelize(str) {
 
   for (let i = 0; i < arr.length; i++) {
 
-    word = arr[i];
+    let word = arr[i];
     
     if ( i != 0 ) {
       // let upperCaseFirst = word[0].toUpperCase();
